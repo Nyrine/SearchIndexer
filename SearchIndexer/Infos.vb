@@ -2,7 +2,7 @@
 
 Module Infos
 
-    Public Function GetDriveLabel(ByVal DName As String) As String
+    Public Function GetDriveLabel(ByVal dName As String) As String
         Dim allDrives() As DriveInfo = DriveInfo.GetDrives()
         Dim d As DriveInfo
         For Each d In allDrives

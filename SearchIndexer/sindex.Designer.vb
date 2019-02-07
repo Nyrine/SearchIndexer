@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class sindex
+Partial Class Sindex
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -24,7 +24,7 @@ Partial Class sindex
     Private Sub InitializeComponent()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.LOG = New System.Windows.Forms.ListBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -32,16 +32,16 @@ Partial Class sindex
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
+        Me.SuspendLayout
         '
-        'ListBox1
+        'LOG
         '
-        Me.ListBox1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(0, 0)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(769, 368)
-        Me.ListBox1.TabIndex = 0
+        Me.LOG.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LOG.FormattingEnabled = true
+        Me.LOG.Location = New System.Drawing.Point(0, 0)
+        Me.LOG.Name = "LOG"
+        Me.LOG.Size = New System.Drawing.Size(769, 368)
+        Me.LOG.TabIndex = 0
         '
         'Button1
         '
@@ -50,7 +50,7 @@ Partial Class sindex
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Go"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = true
         '
         'ProgressBar1
         '
@@ -61,7 +61,7 @@ Partial Class sindex
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
+        Me.Label4.AutoSize = true
         Me.Label4.Location = New System.Drawing.Point(402, 407)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(39, 13)
@@ -70,7 +70,7 @@ Partial Class sindex
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
+        Me.Label5.AutoSize = true
         Me.Label5.Location = New System.Drawing.Point(465, 407)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(39, 13)
@@ -79,7 +79,7 @@ Partial Class sindex
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
+        Me.Label6.AutoSize = true
         Me.Label6.Location = New System.Drawing.Point(522, 407)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 13)
@@ -102,11 +102,11 @@ Partial Class sindex
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 8
         Me.Button3.Text = "Folder"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = true
         '
-        'sindex
+        'Sindex
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(769, 436)
         Me.Controls.Add(Me.Button3)
@@ -116,18 +116,18 @@ Partial Class sindex
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.LOG)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Name = "sindex"
+        Me.Name = "Sindex"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Search Indexer"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents LOG As System.Windows.Forms.ListBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents Label4 As System.Windows.Forms.Label
