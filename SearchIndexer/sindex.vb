@@ -1,9 +1,8 @@
-﻿Imports SearchIndexer.addin
-Imports System.IO
+﻿Imports System.IO
 Imports System.Threading
 Imports System.IO.Path
 Imports System.Xml
-Imports System.Data.SqlClient
+
 
 'Data Source=(LocalDB)\v11.0;AttachDbFilename="R:\Nelethill\Documents\Visual Studio 2012\Projects\Backup and Match\Backup and Match\SampleDatabase.mdf";Integrated Security=True;Connect Timeout=30
 Public Class sindex
@@ -16,20 +15,18 @@ Public Class sindex
     Dim DriveList As New List(Of String)
     Dim FileIndex As New DataTable
     Dim _gFileName As String
-    Public Drive As String = "O:\"
+    Public Drive As String = "C:\"
     Public FileCounter As UInteger = 0
     Dim Worker As Thread
     Dim go As Date
     Dim goa As Date
 
     Private Sub sindex_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-        DriveList.AddRange(drive_add)
+        DriveList.AddRange(Drive_add)
         Arrayout(DriveList.ToArray)
-
     End Sub
 
-    Private Function drive_add() As List(Of String)
+    Private Function Drive_add() As List(Of String)
         Dim lst As New List(Of String)
         Dim allDrives() As DriveInfo = DriveInfo.GetDrives()
         Dim d As DriveInfo
@@ -48,24 +45,8 @@ Public Class sindex
             ListBox1.Items.Add("[" & DateAndTime.Now & "] " & "Detected Drive: " & e)
         Next
     End Sub
-    Private Function GetDriveLabel(ByVal DName As String) As String
-        Dim allDrives() As DriveInfo = DriveInfo.GetDrives()
-        Dim d As DriveInfo
-
-        For Each d In allDrives
-            If d.Name = DName Then
-                Return d.VolumeLabel
-            End If
-        Next
-        Return "Error"
-    End Function
     Private Sub ReadFiles()
-
-
         goa = System.DateTime.Now
-        'Blocks     ProgressBar1.Style = 0
-        'Continuous ProgressBar1.Style = 1
-        'Marquee    ProgressBar1.Style = 2
         Dim list As New List(Of String)
         DriveList.RemoveAt(0)
         For Each i In DriveList
@@ -75,7 +56,7 @@ Public Class sindex
             list.AddRange(GetFilesRecursive(i))
             SetLabel1(list.Count)
             FileCounter = FileCounter + list.Count
-            SetListBox1("[" & DateAndTime.Now & "] " & "Time To read in " & FileCounter & " Files: " & System.DateTime.Now.Subtract(go).TotalMilliseconds & " ms")
+            SetListBox1("[" & Now & "] " & "Time To read in " & FileCounter & " Files: " & System.DateTime.Now.Subtract(go).TotalMilliseconds & " ms")
             go = System.DateTime.Now
             SetProBarStyle(1)
             XMLWrite(list, drive & GenFileName(i) & ".xml", FileCounter, i)
@@ -225,9 +206,9 @@ Public Class sindex
     End Sub
 #End Region
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-
-        Worker = New Thread(AddressOf ReadFiles)
-        Worker.IsBackground = True
+        Worker = New Thread(AddressOf ReadFiles) With {
+            .IsBackground = True
+        }
         Worker.Start()
         ProgressBar1.Value = 0
     End Sub
@@ -347,10 +328,6 @@ Public Class sindex
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
-    End Sub
-
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim folderdialog As New FolderBrowserDialog
         With folderdialog
@@ -364,7 +341,6 @@ Public Class sindex
         Worker.Start()
         ProgressBar1.Value = 0
     End Sub
-
 End Class
 ''' <summary>
 ''' Employee type.

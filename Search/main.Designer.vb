@@ -306,7 +306,7 @@ Partial Class main
         '
         'StatusStrip1
         '
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 604)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 656)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(1206, 22)
         Me.StatusStrip1.TabIndex = 1
@@ -326,7 +326,7 @@ Partial Class main
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.TableLayoutPanel1)
-        Me.SplitContainer1.Size = New System.Drawing.Size(1206, 580)
+        Me.SplitContainer1.Size = New System.Drawing.Size(1206, 632)
         Me.SplitContainer1.SplitterDistance = 915
         Me.SplitContainer1.TabIndex = 2
         '
@@ -343,9 +343,9 @@ Partial Class main
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(915, 580)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(915, 632)
         Me.TableLayoutPanel2.TabIndex = 1
         '
         'DataGridView1
@@ -353,9 +353,9 @@ Partial Class main
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.TableLayoutPanel2.SetColumnSpan(Me.DataGridView1, 2)
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 26)
+        Me.DataGridView1.Location = New System.Drawing.Point(3, 28)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(909, 551)
+        Me.DataGridView1.Size = New System.Drawing.Size(909, 601)
         Me.DataGridView1.TabIndex = 0
         '
         'Button1
@@ -364,7 +364,7 @@ Partial Class main
         Me.Button1.Location = New System.Drawing.Point(840, 0)
         Me.Button1.Margin = New System.Windows.Forms.Padding(0)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(75, 25)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Search"
         Me.Button1.UseVisualStyleBackColor = True
@@ -375,7 +375,7 @@ Partial Class main
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(3, 3)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(834, 20)
+        Me.ComboBox1.Size = New System.Drawing.Size(834, 21)
         Me.ComboBox1.TabIndex = 2
         '
         'TableLayoutPanel1
@@ -420,126 +420,126 @@ Partial Class main
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 10
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(287, 580)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(287, 632)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'PictureBox1
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.PictureBox1, 3)
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Image = Global.Search.My.Resources.Resources._20190107_105659664_iOS
         Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(141, 412)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.Size = New System.Drawing.Size(141, 449)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'Label1
         '
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Location = New System.Drawing.Point(0, 418)
+        Me.Label1.Location = New System.Drawing.Point(0, 455)
         Me.Label1.Margin = New System.Windows.Forms.Padding(0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 19)
+        Me.Label1.Size = New System.Drawing.Size(57, 21)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Label1"
         '
         'Label2
         '
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label2.Location = New System.Drawing.Point(0, 437)
+        Me.Label2.Location = New System.Drawing.Point(0, 476)
         Me.Label2.Margin = New System.Windows.Forms.Padding(0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 20)
+        Me.Label2.Size = New System.Drawing.Size(57, 22)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Label2"
         '
         'Label3
         '
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label3.Location = New System.Drawing.Point(0, 457)
+        Me.Label3.Location = New System.Drawing.Point(0, 498)
         Me.Label3.Margin = New System.Windows.Forms.Padding(0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(57, 18)
+        Me.Label3.Size = New System.Drawing.Size(57, 20)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Label3"
         '
         'Label4
         '
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label4.Location = New System.Drawing.Point(57, 418)
+        Me.Label4.Location = New System.Drawing.Point(57, 455)
         Me.Label4.Margin = New System.Windows.Forms.Padding(0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(45, 19)
+        Me.Label4.Size = New System.Drawing.Size(45, 21)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Label4"
         '
         'Label5
         '
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label5.Location = New System.Drawing.Point(57, 437)
+        Me.Label5.Location = New System.Drawing.Point(57, 476)
         Me.Label5.Margin = New System.Windows.Forms.Padding(0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 20)
+        Me.Label5.Size = New System.Drawing.Size(45, 22)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Label5"
         '
         'Label6
         '
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label6.Location = New System.Drawing.Point(57, 457)
+        Me.Label6.Location = New System.Drawing.Point(57, 498)
         Me.Label6.Margin = New System.Windows.Forms.Padding(0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(45, 18)
+        Me.Label6.Size = New System.Drawing.Size(45, 20)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Label6"
         '
         'Label7
         '
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label7.Location = New System.Drawing.Point(102, 418)
+        Me.Label7.Location = New System.Drawing.Point(102, 455)
         Me.Label7.Margin = New System.Windows.Forms.Padding(0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 19)
+        Me.Label7.Size = New System.Drawing.Size(45, 21)
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Label7"
         '
         'Label8
         '
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label8.Location = New System.Drawing.Point(102, 437)
+        Me.Label8.Location = New System.Drawing.Point(102, 476)
         Me.Label8.Margin = New System.Windows.Forms.Padding(0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(45, 20)
+        Me.Label8.Size = New System.Drawing.Size(45, 22)
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "Label8"
         '
         'Label9
         '
         Me.Label9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label9.Location = New System.Drawing.Point(102, 457)
+        Me.Label9.Location = New System.Drawing.Point(102, 498)
         Me.Label9.Margin = New System.Windows.Forms.Padding(0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(45, 18)
+        Me.Label9.Size = New System.Drawing.Size(45, 20)
         Me.Label9.TabIndex = 15
         Me.Label9.Text = "Label9"
         '
         'Button2
         '
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button2.Location = New System.Drawing.Point(3, 553)
+        Me.Button2.Location = New System.Drawing.Point(3, 602)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(51, 24)
+        Me.Button2.Size = New System.Drawing.Size(51, 27)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Play"
         Me.Button2.UseVisualStyleBackColor = True
@@ -548,9 +548,9 @@ Partial Class main
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.Button3, 2)
         Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button3.Location = New System.Drawing.Point(60, 553)
+        Me.Button3.Location = New System.Drawing.Point(60, 602)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(84, 24)
+        Me.Button3.Size = New System.Drawing.Size(84, 27)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Video Preview"
         Me.Button3.UseVisualStyleBackColor = True
@@ -559,10 +559,10 @@ Partial Class main
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.LinkLabel1, 3)
         Me.LinkLabel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LinkLabel1.Location = New System.Drawing.Point(0, 524)
+        Me.LinkLabel1.Location = New System.Drawing.Point(0, 571)
         Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(147, 14)
+        Me.LinkLabel1.Size = New System.Drawing.Size(147, 15)
         Me.LinkLabel1.TabIndex = 12
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "LinkLabel1"
@@ -570,9 +570,9 @@ Partial Class main
         'Button4
         '
         Me.Button4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button4.Location = New System.Drawing.Point(150, 553)
+        Me.Button4.Location = New System.Drawing.Point(150, 602)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(39, 24)
+        Me.Button4.Size = New System.Drawing.Size(39, 27)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Enc"
         Me.Button4.UseVisualStyleBackColor = True
@@ -584,16 +584,16 @@ Partial Class main
         Me.RichTextBox1.Location = New System.Drawing.Point(147, 0)
         Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(140, 418)
+        Me.RichTextBox1.Size = New System.Drawing.Size(140, 455)
         Me.RichTextBox1.TabIndex = 5
         Me.RichTextBox1.Text = ""
         '
         'Button5
         '
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button5.Location = New System.Drawing.Point(240, 553)
+        Me.Button5.Location = New System.Drawing.Point(240, 602)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(44, 24)
+        Me.Button5.Size = New System.Drawing.Size(44, 27)
         Me.Button5.TabIndex = 4
         Me.Button5.Text = "REF"
         Me.Button5.UseVisualStyleBackColor = True
@@ -602,110 +602,110 @@ Partial Class main
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.LinkLabel2, 3)
         Me.LinkLabel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LinkLabel2.Location = New System.Drawing.Point(147, 524)
+        Me.LinkLabel2.Location = New System.Drawing.Point(147, 571)
         Me.LinkLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(140, 14)
+        Me.LinkLabel2.Size = New System.Drawing.Size(140, 15)
         Me.LinkLabel2.TabIndex = 19
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "LinkLabel2"
         '
         'Label10
         '
-        Me.Label10.Location = New System.Drawing.Point(147, 418)
+        Me.Label10.Location = New System.Drawing.Point(147, 455)
         Me.Label10.Margin = New System.Windows.Forms.Padding(0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(45, 19)
+        Me.Label10.Size = New System.Drawing.Size(45, 21)
         Me.Label10.TabIndex = 16
         Me.Label10.Text = "Label10"
         '
         'Label11
         '
-        Me.Label11.Location = New System.Drawing.Point(147, 437)
+        Me.Label11.Location = New System.Drawing.Point(147, 476)
         Me.Label11.Margin = New System.Windows.Forms.Padding(0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(45, 20)
+        Me.Label11.Size = New System.Drawing.Size(45, 22)
         Me.Label11.TabIndex = 17
         Me.Label11.Text = "Label11"
         '
         'Label12
         '
-        Me.Label12.Location = New System.Drawing.Point(147, 457)
+        Me.Label12.Location = New System.Drawing.Point(147, 498)
         Me.Label12.Margin = New System.Windows.Forms.Padding(0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(45, 18)
+        Me.Label12.Size = New System.Drawing.Size(45, 20)
         Me.Label12.TabIndex = 18
         Me.Label12.Text = "Label12"
         '
         'Label13
         '
         Me.Label13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label13.Location = New System.Drawing.Point(195, 418)
+        Me.Label13.Location = New System.Drawing.Point(195, 455)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(39, 19)
+        Me.Label13.Size = New System.Drawing.Size(39, 21)
         Me.Label13.TabIndex = 20
         Me.Label13.Text = "Label13"
         '
         'Label14
         '
         Me.Label14.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label14.Location = New System.Drawing.Point(195, 437)
+        Me.Label14.Location = New System.Drawing.Point(195, 476)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(39, 20)
+        Me.Label14.Size = New System.Drawing.Size(39, 22)
         Me.Label14.TabIndex = 21
         Me.Label14.Text = "Label14"
         '
         'Label15
         '
         Me.Label15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label15.Location = New System.Drawing.Point(195, 457)
+        Me.Label15.Location = New System.Drawing.Point(195, 498)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(39, 18)
+        Me.Label15.Size = New System.Drawing.Size(39, 20)
         Me.Label15.TabIndex = 22
         Me.Label15.Text = "Label15"
         '
         'Label16
         '
         Me.Label16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label16.Location = New System.Drawing.Point(240, 418)
+        Me.Label16.Location = New System.Drawing.Point(240, 455)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(44, 19)
+        Me.Label16.Size = New System.Drawing.Size(44, 21)
         Me.Label16.TabIndex = 23
         Me.Label16.Text = "Label16"
         '
         'Label17
         '
         Me.Label17.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label17.Location = New System.Drawing.Point(240, 437)
+        Me.Label17.Location = New System.Drawing.Point(240, 476)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(44, 20)
+        Me.Label17.Size = New System.Drawing.Size(44, 22)
         Me.Label17.TabIndex = 24
         Me.Label17.Text = "Label17"
         '
         'Label18
         '
         Me.Label18.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label18.Location = New System.Drawing.Point(240, 457)
+        Me.Label18.Location = New System.Drawing.Point(240, 498)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(44, 18)
+        Me.Label18.Size = New System.Drawing.Size(44, 20)
         Me.Label18.TabIndex = 25
         Me.Label18.Text = "Label18"
         '
         'Button6
         '
         Me.Button6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button6.Location = New System.Drawing.Point(195, 553)
+        Me.Button6.Location = New System.Drawing.Point(195, 602)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(39, 24)
+        Me.Button6.Size = New System.Drawing.Size(39, 27)
         Me.Button6.TabIndex = 26
         Me.Button6.Text = "rIN"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1206, 626)
+        Me.ClientSize = New System.Drawing.Size(1206, 678)
         Me.Controls.Add(Me.SplitContainer1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
