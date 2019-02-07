@@ -1,6 +1,14 @@
-﻿Public Class main
+﻿Imports SearchIndexer
+Public Class main
+    
+Sub New
+    'Dim sind As New sindex
 
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+    'sind.Show()
+    ' Dieser Aufruf ist für den Designer erforderlich.
+    InitializeComponent()
 
-    End Sub
+    ' Fügen Sie Initialisierungen nach dem InitializeComponent()-Aufruf hinzu.
+
+End Sub
 End Class

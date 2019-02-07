@@ -146,6 +146,12 @@
     <None Include="Resources\20190107_105659664_iOS.jpg" />
     <Content Include="WoW.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SearchIndexer\SearchIndexer.vbproj">
+      <Project>{5e1be4ce-8381-43c5-a416-c7d6a4f2b43a}</Project>
+      <Name>SearchIndexer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
