@@ -23,27 +23,22 @@ Public Class Sindex
 
         ' Fügen Sie Initialisierungen nach dem InitializeComponent()-Aufruf hinzu.
         _driveList.AddRange(Drive_add)
-        Arrayout(_driveList.ToArray)
+
     End Sub
     Private Function Drive_add() As List(Of String)
         Dim lst As New List(Of String)
         Dim allDrives() As DriveInfo = DriveInfo.GetDrives()
         Dim d As DriveInfo
-        Dim dt As String
         For Each d In allDrives
-            dt = addin._getDriveType(d.DriveType)
-            If dt = "Fixed" Then
+            If d.DriveType = DriveType.Removable Or d.DriveType = DriveType.Fixed Then
+                LOG.Items.Add(String.Format("[{0}] Detected Drive {1} Drive Type {2}.", Now, d.Name, d.DriveType.ToString()))
                 lst.Add(d.Name)
+            Else
+                LOG.Items.Add(String.Format("[{0}] Detected Drive {1} Drive Type {2} not supported.", Now, d.Name, d.DriveType.ToString()))
             End If
         Next
-
         Return lst
     End Function
-    Private Sub Arrayout(ByVal out() As String)
-        For Each e In out
-            LOG.Items.Add("[" & Now & "] " & "Detected OutPutFolder: " & e)
-        Next
-    End Sub
     Private Sub ReadFiles()
         Dim list As New List(Of String)
         _driveList.RemoveAt(0)
@@ -63,7 +58,7 @@ Public Class Sindex
             SetListBox1(String.Format("[{0}] " & "Time write XMLFile: {1} ms", Now, DateTime.Now.Subtract(_go).TotalMilliseconds))
             FileCounter = 0
         Next
-        SetListBox1("[" & Now & "] " & "Time to do the Job: " & DateTime.Now.Subtract(_go).Minutes & " m")
+        SetListBox1("[" & Now & "] " & "Time to do the job: " & DateTime.Now.Subtract(_go).Minutes & " m")
     End Sub
     Private Sub ReadPath()
         'Blocks     ProgressBar1.Style = 0
@@ -72,15 +67,15 @@ Public Class Sindex
         Dim list As New List(Of String)
 
         _go = DateTime.Now
-        SetListBox1("[" & Now & "] " & "Start Collecting Files on OutPutFolder " & path)
+        SetListBox1("[" & Now & "] " & "Start Collecting Files on OutPutFolder " & Path)
         SetProBarStyle(2)
-        list.AddRange(GetFilesRecursive(path))
+        list.AddRange(GetFilesRecursive(Path))
         SetLabel1(list.Count)
         FileCounter = FileCounter + list.Count
         SetListBox1("[" & Now & "] " & "Time To read in " & FileCounter & " Files: " & DateTime.Now.Subtract(_go).TotalMilliseconds & " ms")
         _go = DateTime.Now
         SetProBarStyle(1)
-        XMLWrite(list, _outPutFolder & GenFileName(path) & ".xml", FileCounter)
+        XMLWrite(list, _outPutFolder & GenFileName(Path) & ".xml", FileCounter)
         list.Clear()
         Reset_all()
         SetListBox1("[" & Now & "] " & "Time write XMLFile: " & DateTime.Now.Subtract(_go).TotalMilliseconds & " ms")
@@ -252,7 +247,7 @@ Public Class Sindex
             Catch ex As Exception
                 ErrLog.Add(String.Format("[{0}] {1}", Now, ex.Message))
                 SetListBox1(String.Format("[{0}] {1}", Now, ex.Message))
-                File.WriteAllLines(String.Format("{0}ErrorLog.txt", _outPutFolder), ErrLog.ToArray)
+                File.WriteAllLines(String.Format("{0} ErrorLog.txt", _outPutFolder), ErrLog.ToArray)
                 'GeWis = 6
                 Me.SetLabel6("Working ... With " & ErrLog.Count.ToString & " Errors")
             End Try
@@ -348,8 +343,9 @@ Public Class Sindex
             path = .SelectedPath
         End With
         SetListBox1("[" & Now & "] " & "Path to scan: " & path)
-        _worker = New Thread(AddressOf ReadPath)
-        _worker.IsBackground = True
+        _worker = New Thread(AddressOf ReadPath) With {
+            .IsBackground = True
+        }
         _worker.Start()
         ProgressBar1.Value = 0
     End Sub

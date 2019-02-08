@@ -64,27 +64,24 @@ Partial Class Sindex
         Me.Label4.AutoSize = true
         Me.Label4.Location = New System.Drawing.Point(402, 407)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
+        Me.Label4.Size = New System.Drawing.Size(0, 13)
         Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Label1"
         '
         'Label5
         '
-        Me.Label5.AutoSize = true
+        Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(465, 407)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.Size = New System.Drawing.Size(0, 13)
         Me.Label5.TabIndex = 5
-        Me.Label5.Text = "Label2"
         '
         'Label6
         '
-        Me.Label6.AutoSize = true
+        Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(522, 407)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(39, 13)
+        Me.Label6.Size = New System.Drawing.Size(0, 13)
         Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Label3"
         '
         'Label1
         '
@@ -92,7 +89,6 @@ Partial Class Sindex
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(188, 13)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Label1"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Button3
